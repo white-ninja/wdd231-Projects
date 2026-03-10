@@ -40,7 +40,7 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="about-photo-grid">
+        <div class="about-photo-grid">
             <section class="about-me">
                 <h2>About Me</h2>
                 <p>
@@ -67,19 +67,19 @@
                 <h2>Student Photo</h2>
                 <img src="images/profile_picture.jpg" alt="Student Photo" width="180" height="180">
             </section>
+        </div>
+        <section class="certificate-section stretched">
+            <h2>Web Certificate Courses</h2>
+            <div id="course-buttons">
+                <button id="all-courses">All</button>
+                <button id="cse-courses">CSE</button>
+                <button id="wdd-courses">WDD</button>
             </div>
-            <section class="certificate-section stretched">
-                <h2>Web Certificate Courses</h2>
-                <div id="course-buttons">
-                    <button id="all-courses">All</button>
-                    <button id="cse-courses">CSE</button>
-                    <button id="wdd-courses">WDD</button>
-                </div>
-                <div id="course-list">
-                    <!-- Dynamic course list will be rendered here -->
-                </div>
-                <p>Total credits for courses listed above: <span id="total-credits">0</span></p>
-            </section>
+            <div id="course-list">
+                <!-- Dynamic course list will be rendered here -->
+            </div>
+            <p>Total credits for courses listed above: <span id="total-credits">0</span></p>
+        </section>
     </main>
     <footer>
         <div class="social">
