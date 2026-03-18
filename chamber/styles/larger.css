@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+    .page {
+        padding: 2rem 0;
+    }
+
+    .site-header {
+        padding: 1.5rem 0;
+    }
+
+    .page-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .directory-controls {
+        align-items: flex-end;
+    }
+
+    .directory.list .member {
+        grid-template-columns: minmax(90px, auto) 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0.75rem;
+        padding: 0.75rem;
+        position: absolute;
+        inset: 86px 1rem 0;
+        display: none;
+    }
+
+    .nav-list[data-visible="true"] {
+        display: flex;
+    }
+
+    .nav-list a {
+        padding: 0.55rem 0.75rem;
+        border-radius: 0.65rem;
+    }
+
+    .site-header .page {
+        position: relative;
+    }
+}

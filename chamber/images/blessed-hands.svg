@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="22" fill="#ffb703"/>
+  <path d="M40 80c0-20 40-20 40 0" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M50 60c0-10 20-10 20 0" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="50" cy="45" r="6" fill="#fff"/>
+  <circle cx="70" cy="45" r="6" fill="#fff"/>
+  <text x="60" y="32" fill="#fff" font-size="14" font-family="system-ui" text-anchor="middle">Fashion</text>
+</svg>

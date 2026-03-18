@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Raukeeyang Farms Ltd.",
+        "address": "22/24 Bolarinwa Opesha Street, Sango Ota, Ogun State, Nigeria",
+        "phone": "+234 816 416 1682",
+        "website": "https://raukeeyangfarms.com",
+        "image": "greenfield-agro.svg",
+        "membership": 2,
+        "tagline": "Quality agricultural inputs for better harvests",
+        "hours": "Mon–Sat 8am–6pm"
+    },
+    {
+        "name": "PrimeTech Electronics Hub",
+        "address": "45 Iyana Iyesi Road, Ota, Ogun State, Nigeria",
+        "phone": "+234 812 774 9032",
+        "website": "https://primetechhub.com",
+        "image": "primetech-electronics.svg",
+        "membership": 3,
+        "tagline": "Latest gadgets and reliable tech solutions",
+        "hours": "Mon–Sat 9am–7pm"
+    },
+    {
+        "name": "Royal Taste Restaurant & Lounge",
+        "address": "8 Obasanjo Way, Ota, Ogun State, Nigeria",
+        "phone": "+234 809 331 6625",
+        "website": "https://royaltaste.com",
+        "image": "royal-taste.svg",
+        "membership": 2,
+        "tagline": "Delicious meals in a relaxing atmosphere",
+        "hours": "Daily 10am–10pm"
+    },
+    {
+        "name": "Sunrise Logistics Services",
+        "address": "21 Idiroko Road, Sango Ota, Ogun State, Nigeria",
+        "phone": "+234 816 502 1476",
+        "website": "https://sunriselogistics.com",
+        "image": "sunrise-logistics.svg",
+        "membership": 3,
+        "tagline": "Fast and dependable delivery services",
+        "hours": "Mon–Fri 8am–6pm"
+    },
+    {
+        "name": "Blessed Hands Fashion House",
+        "address": "3 Ajegunle Street, Iju-Ota, Ogun State, Nigeria",
+        "phone": "+234 705 889 2140",
+        "website": "https://blessedhandsfashion.com",
+        "image": "blessed-hands.svg",
+        "membership": 1,
+        "tagline": "Custom styles tailored just for you",
+        "hours": "Mon–Sat 9am–6pm"
+    },
+    {
+        "name": "Greenfield Agro Supplies Ltd.",
+        "address": "12 Akinwale Street, Sango Ota, Ogun State, Nigeria",
+        "phone": "+234 803 456 2198",
+        "website": "https://greenfieldagro.com",
+        "image": "greenfield-agro.svg",
+        "membership": 2,
+        "tagline": "Quality agricultural inputs for better harvests",
+        "hours": "Mon–Sat 8am–6pm"
+    },
+    {
+        "name": "NextGen ICT Solutions",
+        "address": "14 Covenant University Road, Canaanland, Ota, Ogun State, Nigeria",
+        "phone": "+234 807 665 4328",
+        "website": "https://nextgenict.com",
+        "image": "nextgen-ict.svg",
+        "membership": 3,
+        "tagline": "Innovative tech services for modern businesses",
+        "hours": "Mon–Fri 8am–6pm"
+    },
+    {
+        "name": "Harmony Pharmacy & Stores",
+        "address": "29 Toll Gate Area, Sango Ota, Ogun State, Nigeria",
+        "phone": "+234 813 904 5567",
+        "website": "https://harmonypharmacy.com",
+        "image": "harmony-pharmacy.svg",
+        "membership": 1,
+        "tagline": "Your trusted partner in health and wellness",
+        "hours": "Mon–Sun 8am–9pm"
+    }
+]

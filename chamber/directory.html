@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber Directory | OtaCity Chamber of Commerce</title>
+    <meta name="description"
+        content="Browse the member directory for the OtaCity Chamber of Commerce. Find local businesses, contact info, and membership levels.">
+    <meta name="author" content="Emmanuel Adejare Ariyo">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="OtaCity Chamber Member Directory">
+    <meta property="og:description"
+        content="Browse local businesses that support our community through the Chamber of Commerce.">
+    <meta property="og:image" content="images/og-image.svg">
+    <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="page">
+            <div class="branding">
+                <a class="brand" href="../index.html">
+                    <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo">
+                    <span class="brand__name">OtaCity Chamber</span>
+                </a>
+                <p class="brand__tagline">Connecting local businesses and our community</p>
+            </div>
+
+            <nav class="main-nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="visually-hidden">Toggle navigation</span>
+                </button>
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#discover" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#join">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <header class="page-header">
+            <h1>Member Directory</h1>
+            <p class="intro">Explore local businesses that support our community. Use the view controls to toggle
+                between cards and a compact list.</p>
+        </header>
+
+        <section class="directory-controls" aria-label="Display options">
+            <div class="view-toggle" role="group" aria-label="View selection">
+                <button id="grid-btn" class="btn" type="button" aria-pressed="true">Grid view</button>
+                <button id="list-btn" class="btn" type="button" aria-pressed="false">List view</button>
+            </div>
+            <p class="directory-note">Tip: Press <kbd>G</kbd> for grid or <kbd>L</kbd> for list (when directory has
+                focus).</p>
+        </section>
+
+        <section id="directory" class="directory" aria-live="polite">
+            <p class="loading" id="loading">Loading members…</p>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="page footer-grid">
+            <address class="footer-contact">
+                <h2>Contact</h2>
+                <p> OtaCity Chamber of Commerce<br>
+                    Obafemi Awolowo Way<br>
+                    Okesuna, PMB 1011<br>
+                    Ota, OG 112104<br>
+                    <a href="tel:+2348032227474">+234 803 222 7474</a><br>
+                    <a href="mailto:info@adoodootalg.org.ng">info@adoodootalg.org.ng</a>
+                </p>
+            </address>
+
+            <div class="footer-meta">
+                <h2>Development</h2>
+                <p>WDD 231 – Web Frontend Development I – Emmanuel Adejare Ariyo</p>
+                <p>Last updated: <span id="last-modified">—</span></p>
+                <p>&copy; <span id="current-year"></span> OtaCity Chamber of Commerce</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+
+</html>
