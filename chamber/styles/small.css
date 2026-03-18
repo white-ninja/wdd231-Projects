@@ -79,7 +79,6 @@ p {
 }
 
 .site-header {
-    background: var(--color-primary);
     background: linear-gradient(130deg, var(--color-primary), var(--color-primary-2));
     color: #fff;
 }
