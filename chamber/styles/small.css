@@ -79,8 +79,9 @@ p {
 }
 
 .site-header {
+    background: var(--color-primary);
     background: linear-gradient(130deg, var(--color-primary), var(--color-primary-2));
-    color: rgb(30,30,30); /* Dark gray text */
+    color: #fff;
 }
 
 .branding {
@@ -109,7 +110,7 @@ p {
 
 .brand__tagline {
     margin: 0;
-    color: rgb(30,30,30); /* Solid dark gray */
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .main-nav {
@@ -158,7 +159,8 @@ p {
 }
 
 .nav-list a.active {
-     color: rgb(0, 107, 166); /* dark blue or choose a strong color from your palette */
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .page-header .intro {
@@ -184,17 +186,16 @@ p {
 .btn {
     border: 1px solid transparent;
     border-radius: 0.5rem;
-    background-color: rgba(0, 107, 166, 0.9); /* stronger contrast */
+    background: rgba(0, 107, 166, 0.35);
     padding: 0.6rem 1rem;
     font-weight: 600;
     cursor: pointer;
-    color: white; /* white text for better contrast */
-    /* color: var(--color-text); */
+    color: #ffffff;
 }
 
 .btn:hover,
 .btn:focus {
-    background: rgba(0, 107, 166, 0.2);
+    background: rgba(0, 107, 166, 0.55);
 }
 
 .btn:focus-visible {
@@ -381,9 +382,16 @@ p {
     margin-top: 2rem;
 }
 
+.site-footer h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+}
+
 .footer-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
+    align-items: start;
 }
 
 .footer-contact a {
