@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OtaCity Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the OtaCity Chamber of Commerce. Supporting local businesses and community growth.">
+    <meta name="author" content="Emmanuel Adejare Ariyo">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap">
+
+    <!-- Home page JS -->
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="page">
+        <div class="branding">
+            <a class="brand" href="index.html">
+                <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo" width="48" height="48">
+                <span class="brand__name">OtaCity Chamber</span>
+            </a>
+            <p class="brand__tagline">Connecting local businesses and our community</p>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Open menu">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+
+            <ul id="primary-navigation" class="nav-list" data-visible="false">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="page">
+
+<!-- HERO -->
+<section class="hero">
+    <img 
+        src="images/palms-ota-mall.webp" 
+        alt="The Palms Ota shopping mall exterior"
+        class="hero__image"
+        width="1200" 
+        height="600"
+        fetchpriority="high"
+        decoding="async"
+    >
+
+    <div class="hero__content">
+        <h1>OtaCity Chamber of Commerce</h1>
+        <p>Supporting local businesses, networking opportunities, and community growth.</p>
+        <a href="join.html" class="btn hero__cta">Join the Chamber</a>
+    </div>
+</section>
+
+<!-- WEATHER -->
+<section class="weather">
+    <h2>Current Weather in Ota</h2>
+    <div class="weather-card">
+        <img id="weather-icon" src="" alt="">
+        <p id="current-temp"></p>
+        <p id="current-weather-desc"></p>
+    </div>
+
+    <h3>3-Day Forecast</h3>
+    <ul id="forecast"></ul>
+</section>
+
+<!-- SPOTLIGHT BUSINESSES -->
+<section class="spotlights">
+    <h2>Business Spotlights</h2>
+    <div id="spotlight-cards" class="directory grid"></div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+    <h2>Grow Your Business With Us</h2>
+    <p>Become part of a network of thriving businesses and gain visibility in our community.</p>
+    <a class="btn" href="join.html">Become a Member</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="page footer-grid">
+
+        <div>
+            <h2>Contact</h2>
+            <p>
+                OtaCity Chamber of Commerce<br>
+                Obafemi Awolowo Way, Ota<br>
+                +234 803 222 7474<br>
+                info@adoodootalg.org.ng
+            </p>
+        </div>
+
+        <div class="footer-meta">
+            <p>WDD 231 – Emmanuel Adejare Ariyo</p>
+            <p>Last Updated: <span id="last-modified"></span></p>
+            <p>&copy; <span id="current-year"></span> OtaCity Chamber</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

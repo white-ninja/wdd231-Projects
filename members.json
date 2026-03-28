@@ -1,0 +1,23 @@
+{
+  "familyName": "Johnson",
+  "movedInDate": "2024-06-15",
+  "familyMembers": 3,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "Mark Johnson",
+      "gender": "Male",
+      "birthdate": "1985-04-10"
+    },
+    {
+      "name": "Lisa Johnson",
+      "gender": "Female",
+      "birthdate": "1987-09-22"
+    },
+    {
+      "name": "Emma Johnson",
+      "gender": "Female",
+      "birthdate": "2015-12-05"
+    }
+  ]
+}
