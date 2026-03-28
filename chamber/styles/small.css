@@ -438,10 +438,6 @@ p {
     margin: 0.35rem 0;
 }
 /* ===== MOBILE NAVIGATION ===== */
-.nav-toggle {
-    display: none;
-}
-/* mobile view */
 @media (max-width: 720px) {
     .nav-toggle {
         display: inline-flex;
