@@ -18,10 +18,17 @@
     <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    <!-- CSS -->
+     <!-- CSS -->
+    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+
+     <!-- Fallback for no JavaScript -->
+    <noscript>
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
 
     <!-- Google Fonts Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,68 +43,68 @@
 </head>
 <body>
 
-<header class="site-header">
-    <div class="page">
-        <div class="branding">
-            <a class="brand" href="index.html">
-                <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo" width="48" height="48">
-                <span class="brand__name">OtaCity Chamber</span>
-            </a>
-            <p class="brand__tagline">Connecting local businesses and our community</p>
+    <header class="site-header">
+        <div class="page">
+            <div class="branding">
+                <a class="brand" href="index.html">
+                    <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo" width="48" height="48">
+                    <span class="brand__name">OtaCity Chamber</span>
+                </a>
+                <p class="brand__tagline">Connecting local businesses and our community</p>
+            </div>
+
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page thankyou-page">
+
+        <section class="thankyou-hero">
+            <h1>🎉 Application Received!</h1>
+            <p>Thank you for applying to join the OtaCity Chamber of Commerce.</p>
+        </section>
+
+        <section id="results" class="application-card"></section>
+
+        <div class="thankyou-actions">
+            <a href="index.html" class="btn">Return Home</a>
+            <a href="directory.html" class="btn">View Member Directory</a>
         </div>
 
-        <nav class="main-nav">
-            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
-                <span class="nav-toggle__bar"></span>
-                <span class="nav-toggle__bar"></span>
-                <span class="nav-toggle__bar"></span>
-            </button>
+    </main>
 
-            <ul id="primary-navigation" class="nav-list" data-visible="false">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <footer class="site-footer">
+        <div class="page footer-grid">
+            <div>
+                <h2>Contact</h2>
+                <p>
+                    OtaCity Chamber of Commerce<br>
+                    Obafemi Awolowo Way, Ota<br>
+                    +234 803 222 7474<br>
+                    info@adoodootalg.org.ng
+                </p>
+            </div>
 
-<main class="page thankyou-page">
-
-    <section class="thankyou-hero">
-        <h1>🎉 Application Received!</h1>
-        <p>Thank you for applying to join the OtaCity Chamber of Commerce.</p>
-    </section>
-
-    <section id="results" class="application-card"></section>
-
-    <div class="thankyou-actions">
-        <a href="index.html" class="btn">Return Home</a>
-        <a href="directory.html" class="btn">View Member Directory</a>
-    </div>
-
-</main>
-
-<footer class="site-footer">
-    <div class="page footer-grid">
-        <div>
-            <h2>Contact</h2>
-            <p>
-                OtaCity Chamber of Commerce<br>
-                Obafemi Awolowo Way, Ota<br>
-                +234 803 222 7474<br>
-                info@adoodootalg.org.ng
-            </p>
+            <div class="footer-meta">
+                <p>WDD 231 – Emmanuel Adejare Ariyo</p>
+                <p>Last Updated: <span id="last-modified"></span></p>
+                <p>&copy; <span id="current-year"></span> OtaCity Chamber</p>
+            </div>
         </div>
-
-        <div class="footer-meta">
-            <p>WDD 231 – Emmanuel Adejare Ariyo</p>
-            <p>Last Updated: <span id="last-modified"></span></p>
-            <p>&copy; <span id="current-year"></span> OtaCity Chamber</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>

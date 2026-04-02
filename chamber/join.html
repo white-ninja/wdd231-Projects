@@ -42,203 +42,205 @@
     <script src="scripts/home.js" defer></script>
 </head>
 
-<header class="site-header">
-    <div class="page">
-        <div class="branding">
-            <a class="brand" href="index.html">
-                <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo" width="48" height="48">
-                <span class="brand__name">OtaCity Chamber</span>
-            </a>
-            <p class="brand__tagline">Connecting local businesses and our community</p>
-        </div>
-
-        <nav class="main-nav">
-            <button class="nav-toggle"
-                aria-expanded="false"
-                aria-controls="primary-navigation"
-                aria-label="Open menu">
-                <span class="nav-toggle__bar"></span>
-                <span class="nav-toggle__bar"></span>
-                <span class="nav-toggle__bar"></span>
-            </button>
-
-            <ul id="primary-navigation" class="nav-list" data-visible="false">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="thankyou.html">Thank You</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
 <body>
+
+    <header class="site-header">
+        <div class="page">
+            <div class="branding">
+                <a class="brand" href="index.html">
+                    <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo" width="48" height="48">
+                    <span class="brand__name">OtaCity Chamber</span>
+                </a>
+                <p class="brand__tagline">Connecting local businesses and our community</p>
+            </div>
+
+            <nav class="main-nav">
+                <button class="nav-toggle"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation"
+                    aria-label="Open menu">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+
+                <ul id="primary-navigation" class="nav-list" data-visible="false">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="thankyou.html">Thank You</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
     <main class="page">
         <h1>Join the OtaCity Chamber</h1>
         <p>Become part of a thriving business community.</p>
 
         <section class="join-layout">
 
-        <!-- FORM -->
-        <form method="get" action="thankyou.html" class="join-form">
+            <!-- FORM -->
+            <form method="get" action="thankyou.html" class="join-form">
 
-            <!-- FIRST NAME -->
-            <label>
-                First Name
-                <input type="text"
-                    name="fname"
-                    title="Enter your first name"
-                    autocomplete="given-name"
-                    required>
-            </label>
+                <!-- FIRST NAME -->
+                <label>
+                    First Name
+                    <input type="text"
+                        name="fname"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required>
+                </label>
 
-            <!-- LAST NAME -->
-            <label>
-                Last Name
-                <input type="text"
-                    name="lname"
-                    title="Enter your last name"
-                    autocomplete="family-name"
-                    required>
-            </label>
+                <!-- LAST NAME -->
+                <label>
+                    Last Name
+                    <input type="text"
+                        name="lname"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required>
+                </label>
 
-            <!-- ORGANIZATIONAL TITLE -->
-            <label>
-                Your Title in Organization
-                <input type="text"
-                    name="orgtitle"
-                    title="Your role in the organization"
-                    autocomplete="organization-title"
-                    pattern="[A-Za-z\\-\\s]{7,}"
-                    placeholder="Marketing Manager"
-                >
-            </label>
+                <!-- ORGANIZATIONAL TITLE -->
+                <label>
+                    Your Title in Organization
+                    <input type="text"
+                        name="orgtitle"
+                        title="Your role in the organization"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z\\-\\s]{7,}"
+                        placeholder="Marketing Manager"
+                    >
+                </label>
 
-            <!-- EMAIL -->
-            <label>
-                Email Address
-                <input type="email"
-                    name="email"
-                    title="Enter email"
-                    autocomplete="email"
-                    placeholder="example@email.com"
-                    required>
-            </label>
+                <!-- EMAIL -->
+                <label>
+                    Email Address
+                    <input type="email"
+                        name="email"
+                        title="Enter email"
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required>
+                </label>
 
-            <!-- PHONE -->
-            <label>
-                Mobile Phone
-                <input type="tel"
-                    name="phone"
-                    title="Enter mobile number"
-                    autocomplete="tel"
-                    required>
-            </label>
+                <!-- PHONE -->
+                <label>
+                    Mobile Phone
+                    <input type="tel"
+                        name="phone"
+                        title="Enter mobile number"
+                        autocomplete="tel"
+                        required>
+                </label>
 
-            <!-- BUSINESS NAME -->
-            <label>
-                Business Name
-                <input type="text"
-                    name="business"
-                    title="Business name"
-                    autocomplete="organization"
-                    required>
-            </label>
+                <!-- BUSINESS NAME -->
+                <label>
+                    Business Name
+                    <input type="text"
+                        name="business"
+                        title="Business name"
+                        autocomplete="organization"
+                        required>
+                </label>
 
-            <!-- MEMBERSHIP LEVEL -->
-            <label>
-                Membership Level
-                <select name="membership" required>
-                    <option value="">Select a level</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                </select>
-            </label>
+                <!-- MEMBERSHIP LEVEL -->
+                <label>
+                    Membership Level
+                    <select name="membership" required>
+                        <option value="">Select a level</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
 
-            <!-- BUSINESS DESCRIPTION -->
-            <label>
-                Business Description
-                <textarea name="description" title="Describe your business"></textarea>
-            </label>
+                <!-- BUSINESS DESCRIPTION -->
+                <label>
+                    Business Description
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
 
-            <!-- TIMESTAMP (hidden) -->
-            <input type="hidden" id="timestamp" name="timestamp">
+                <!-- TIMESTAMP (hidden) -->
+                <input type="hidden" id="timestamp" name="timestamp">
 
-            <input type="submit" value="Apply for Membership" class="btn">
-        </form>
+                <input type="submit" value="Apply for Membership" class="btn">
+            </form>
 
         <!-- MEMBERSHIP CARDS -->
-        <section class="membership-cards">
+            <section class="membership-cards">
 
-            <div class="card">
-                <h3>NP Membership</h3>
-                <a href="#" data-modal="npModal">View Benefits</a>
-            </div>
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <a href="#" data-modal="npModal">View Benefits</a>
+                </div>
 
-            <div class="card">
-                <h3>Bronze Membership</h3>
-                <a href="#" data-modal="bronzeModal">View Benefits</a>
-            </div>
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <a href="#" data-modal="bronzeModal">View Benefits</a>
+                </div>
 
-            <div class="card">
-                <h3>Silver Membership</h3>
-                <a href="#" data-modal="silverModal">View Benefits</a>
-            </div>
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <a href="#" data-modal="silverModal">View Benefits</a>
+                </div>
 
-            <div class="card">
-                <h3>Gold Membership</h3>
-                <a href="#" data-modal="goldModal">View Benefits</a>
-            </div>
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <a href="#" data-modal="goldModal">View Benefits</a>
+                </div>
 
+            </section>
         </section>
-        </section>
-    <dialog id="npModal">
-        <h2>NP Membership Benefits</h2>
-        <p>No fee. Access to networking events and training.</p>
-        <button class="close">Close</button>
-    </dialog>
+        <dialog id="npModal">
+            <h2>NP Membership Benefits</h2>
+            <p>No fee. Access to networking events and training.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-    <dialog id="bronzeModal">
-        <h2>Bronze Benefits</h2>
-        <p>Event discounts and directory listing.</p>
-        <button class="close">Close</button>
-    </dialog>
+        <dialog id="bronzeModal">
+            <h2>Bronze Benefits</h2>
+            <p>Event discounts and directory listing.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-    <dialog id="silverModal">
-        <h2>Silver Benefits</h2>
-        <p>Advertising and spotlight positions.</p>
-        <button class="close">Close</button>
-    </dialog>
+        <dialog id="silverModal">
+            <h2>Silver Benefits</h2>
+            <p>Advertising and spotlight positions.</p>
+            <button class="close">Close</button>
+        </dialog>
 
-    <dialog id="goldModal">
-        <h2>Gold Benefits</h2>
-        <p>Premium advertising and homepage spotlight.</p>
-        <button class="close">Close</button>
-    </dialog>
+        <dialog id="goldModal">
+            <h2>Gold Benefits</h2>
+            <p>Premium advertising and homepage spotlight.</p>
+            <button class="close">Close</button>
+        </dialog>
     </main>
     <footer class="site-footer">
-    <div class="page footer-grid">
+        <div class="page footer-grid">
 
-        <div>
-            <h2>Contact</h2>
-            <p>
-                OtaCity Chamber of Commerce<br>
-                Obafemi Awolowo Way, Ota<br>
-                +234 803 222 7474<br>
-                info@adoodootalg.org.ng
-            </p>
+            <div>
+                <h2>Contact</h2>
+                <p>
+                    OtaCity Chamber of Commerce<br>
+                    Obafemi Awolowo Way, Ota<br>
+                    +234 803 222 7474<br>
+                    info@adoodootalg.org.ng
+                </p>
+            </div>
+
+            <div class="footer-meta">
+                <p>WDD 231 – Emmanuel Adejare Ariyo</p>
+                <p>Last Updated: <span id="last-modified"></span></p>
+                <p>&copy; <span id="current-year"></span> OtaCity Chamber</p>
+            </div>
+
         </div>
-
-        <div class="footer-meta">
-            <p>WDD 231 – Emmanuel Adejare Ariyo</p>
-            <p>Last Updated: <span id="last-modified"></span></p>
-            <p>&copy; <span id="current-year"></span> OtaCity Chamber</p>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

@@ -23,10 +23,17 @@
     <!-- JavaScript -->
     <script src="scripts/directory.js" defer></script>
 
-    <!-- CSS -->
+     <!-- CSS -->
+    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+
+     <!-- Fallback for no JavaScript -->
+    <noscript>
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
 
     <!-- Google Fonts Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,10 +61,11 @@
                     <span class="visually-hidden">Toggle navigation</span>
                 </button>
                 <ul id="primary-navigation" class="nav-list" data-visible="false">
-                    <li><a href="#index">Home</a></li>
-                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html" class="active">Directory</a></li>
-                    <li><a href="#join">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="thankyou.html">Thank You</a></li>
                 </ul>
             </nav>
         </div>

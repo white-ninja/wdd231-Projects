@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | OtaCity Chamber of Commerce</title>
+    <meta name="description" content="Discover the benefits of joining the OtaCity Chamber of Commerce. Connect with local businesses and grow your network.">
+    <meta name="author" content="Emmanuel Adejare Ariyo">
+
+     <!-- Favicon -->   
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="OtaCity Chamber Member Directory">
+    <meta property="og:description"
+        content="Browse local businesses that support our community through the Chamber of Commerce.">
+    <meta property="og:image" content="https://white-ninja.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+     <!-- Fallback for no JavaScript -->
+    <noscript>
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
+
+    <!-- Google Fonts Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Join page JS -->
+    <script src="scripts/join.js" defer></script>
+    <!-- Home page JS -->
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="page">
+        <div class="branding">
+            <a class="brand" href="index.html">
+                <img class="brand__logo" src="images/favicon.svg" alt="OtaCity Chamber logo" width="48" height="48">
+                <span class="brand__name">OtaCity Chamber</span>
+            </a>
+            <p class="brand__tagline">Connecting local businesses and our community</p>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-toggle"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Open menu">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+
+            <ul id="primary-navigation" class="nav-list" data-visible="false">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+</body>
+</html>
