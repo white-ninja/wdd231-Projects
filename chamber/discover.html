@@ -21,8 +21,8 @@
     <meta property="og:type" content="website">
 
     <!-- CSS -->
-    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/small.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/larger.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/normalize.css">
 
     <!-- Fallback for no JavaScript -->
@@ -39,7 +39,7 @@
         rel="stylesheet">
 
     <!-- Discover page JS -->
-    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
@@ -74,9 +74,14 @@
 
     <main class="discover-page">
 
-        <section id="visitMessage" class="visit-msg"></section>
+        <h1>Discover OtaCity</h1>
+
+        <section id="visitMessage" class="visit-msg">
+            <h2>Visit Message</h2>
+        </section>
 
         <section class="discover-grid" id="discoverGrid">
+            <h2>Places to Discover</h2>
             <!-- Cards injected by JS -->
         </section>
 

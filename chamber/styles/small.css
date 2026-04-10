@@ -584,18 +584,6 @@ p {
     background: var(--color-primary);
 }
 
-.card {
-    border: 1px solid var(--color-border);
-    border-radius: .6rem;
-    padding: 1rem;
-    background: linear-gradient(180deg, #fff, #f8fbff);
-    transition: transform .3s ease, box-shadow .3s ease;
-    /* animation on load */
-    opacity: 0;
-    transform: translateY(25px);
-    animation: fadeUp .8s forwards;
-}
-
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -671,20 +659,44 @@ p {
     flex-wrap: wrap;
 }
 
-.visit-msg {
-    background: #eef6ff;
-    padding: 1rem;
-    border-left: 5px solid #0077cc;
-    margin-bottom: 1rem;
-}
-
 /* CARD STYLING */
 .card {
-    background: white;
-    padding: 1rem;
+    border: 1px solid var(--color-border);
     border-radius: .6rem;
+    padding: 1rem;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     transition: transform .3s;
+    /* animation on load */
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp .8s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, .12);
+}
+
+.card h3 {
+    margin-bottom: .25rem;
+}
+
+.card a {
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .card img {
@@ -708,6 +720,9 @@ p {
     font-size: 1.1rem;
     color: var(--color-primary);
     font-weight: 600;
+    background: #eef6ff;
+    padding: 1rem;
+    border-left: 5px solid #0077cc;
 }
 
 /* GRID AREAS LAYOUT */
