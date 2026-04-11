@@ -2,6 +2,15 @@
  * Weather Widget - OpenWeatherMap Integration
  * Displays current weather and 5-day forecast for Raukeeyang Integrated Farm
  * Location: Ota, Ogun State, Nigeria (6.7°N, 3.57°E)
+ *
+ * This feature fetches real-time weather data from the OpenWeatherMap API to provide
+ * visitors with current weather conditions and a 5-day forecast for the farm's location.
+ * It enhances user experience by showing relevant environmental information for planning
+ * farm visits or understanding local conditions affecting fresh produce availability.
+ *
+ * API Key: Uses a free tier OpenWeatherMap API key (replace with your own for production)
+ * Data includes: temperature, humidity, wind speed, cloud coverage, and weather icons
+ * Error handling: Displays user-friendly messages if API calls fail
  */
 
 // Configuration

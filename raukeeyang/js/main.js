@@ -1,16 +1,3 @@
-// MOBILE MENU TOGGLE
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
-
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-});
-
-// FOOTER DATES
-document.getElementById("current-year").textContent = new Date().getFullYear();
-document.getElementById("last-modified").textContent = document.lastModified;
-
-
 // SIMPLE SCROLL ANIMATION
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
